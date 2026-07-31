@@ -33,14 +33,14 @@ resize();
 window.onresize = resize;
 
 ctx.fillStyle = "#ff6bc1";
-ctx.font = "bold 11px Arial";
+ctx.font = "bold 13px Arial";
 
 let scale = 5;
 let i = 0;
 
 function draw(){
 
-    if(scale>64){
+    if(scale>34){
         clearInterval(timer);
         return;
     }
@@ -68,7 +68,7 @@ function draw(){
 
 }
 
-let timer = setInterval(draw,6);
+let timer = setInterval(draw,4);
 
 </script>
 
