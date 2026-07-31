@@ -33,7 +33,7 @@ resize();
 window.onresize = resize;
 
 ctx.fillStyle = "#ff6bc1";
-ctx.font = "bold 12px Arial";
+ctx.font = "bold 14px Arial";
 
 let scale = 5;
 let i = 0;
@@ -45,7 +45,7 @@ function draw(){
         return;
     }
 
-    let angle = i * Math.PI * 2 / 80;
+    let angle = i * Math.PI * 2 / 90;
 
     let x = 16*Math.pow(Math.sin(angle),3);
     let y = 13*Math.cos(angle)
@@ -61,7 +61,7 @@ function draw(){
 
     i++;
 
-    if(i>=80){
+    if(i>=90){
         i=0;
         scale += 1.5;
     }
